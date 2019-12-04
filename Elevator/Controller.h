@@ -7,7 +7,7 @@ class CController : public CElevatorController
 public:
 
 	/// The state machine states
-	enum States { Idle, DoorOpening, DoorOpen, DoorClosing };
+	enum States { Idle, DoorOpening, DoorOpen, DoorClosing, Moving, Stop };
 
 	CController();
 
