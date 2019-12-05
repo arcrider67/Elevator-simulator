@@ -2,6 +2,8 @@
 #include "ElevatorController.h"
 #include "Floor.h"
 
+
+/**derived class for elevator controller*/
 class CController : public CElevatorController
 {
 public:

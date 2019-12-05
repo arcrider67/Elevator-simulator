@@ -196,7 +196,9 @@ void CController::OnClosePressed()
 		break;
 	}
 }
-
+/**called when a floor is pressed on the panel
+* \param floor floor number that was pressed
+*/
 void CController::OnPanelFloorPressed(int floor)
 {
 
@@ -213,6 +215,10 @@ void CController::OnCallUpPressed(int floor)
 	mFloors[floor - 1].SetUp(true);
 }
 
+/** This function is called when the down button is pressed
+ * on a floor.
+ * \param floor The floor we are called to 1-3
+ */
 void CController::OnCallDownPressed(int floor)
 {
 	mFloors[floor - 1].SetDown(true);
@@ -300,7 +306,9 @@ int CController::WhatFloorUp()
 	return 0;
 }
 
-
+/**determines which floor in the down direction should be traveled to
+* \returns Floor 1 through 3 that should be traveled to
+*/
 int CController::WhatFloorDown()
 {
 	// What floor are we currently on?
